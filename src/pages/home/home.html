@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      iDice
+    </ion-title>
+    <ion-buttons end>
+       <button ion-button  color="light" (click)="Clear()"> Clear  </button>  
+    </ion-buttons>   
+           
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+    <div>  
+        <ion-grid class="item item-trns">
+          <ion-row>
+            <ion-col>
+                <h1 class="font-family"><strong>TIMES: {{times}}</strong></h1> 
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col #myElement7>
+                <button ion-button round="true" block outline (click)="getArray()" color="charlie" #myElement7>Click or Shake</button>
+              </ion-col>
+            </ion-row>
+          <ion-row>
+            <ion-col>
+                <h1 class="font-family"><ion-icon name="star"  *ngIf ="max == sum[0]"></ion-icon><strong > ONE: {{sum[0]}}</strong></h1>
+            </ion-col>
+            <ion-col>
+                <h1 class="font-family"><ion-icon name="star"  *ngIf ="max == sum[1]"></ion-icon><strong > TWO: {{sum[1]}}</strong></h1>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+                <h1 class="font-family"><ion-icon name="star"  *ngIf ="max == sum[2]"></ion-icon><strong > THREE: {{sum[2]}}</strong></h1>
+            </ion-col>
+            <ion-col>
+                <h1 class="font-family"><ion-icon name="star"  *ngIf ="max == sum[3]"></ion-icon><strong > FOUR: {{sum[3]}}</strong></h1>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+                <h1 class="font-family"><ion-icon name="star"  *ngIf ="max == sum[4]"></ion-icon><strong > FIVE: {{sum[4]}}</strong></h1>             
+            </ion-col>
+            <ion-col>
+                <h1 class="font-family"><ion-icon name="star"  *ngIf ="max == sum[5]"></ion-icon><strong > SIX: {{sum[5]}}</strong></h1>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        <!-- <button ion-button (click)="animation.start({type:'wobble', duration:'1000'})">click me</button> -->
+        <!-- <button ion-button (click)="animateElem()">Click here</button> -->
+    </div>
+    
+    
+  <div class="myClass" #myElement1>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-card  #myElement2>
+            <img src="{{src[0]}}"/>              
+          </ion-card>
+      </ion-col>
+      <ion-col>
+          <ion-card #myElement3>
+            <img src="{{src[1]}}"/>             
+          </ion-card>
+      </ion-col>
+      <ion-col>
+          <ion-card>
+            <img src="{{src[2]}}"/>               
+          </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-card #myElement4>
+              <img src="{{src[3]}}"/>              
+            </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card #myElement5>
+              <img src="{{src[4]}}"/>             
+            </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card #myElement6>
+              <img src="{{src[5]}}"/>               
+            </ion-card>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</div>
+
+  
+  
+</ion-content>
+<ion-footer>
+    <ion-navbar>
+      <ion-title>
+          <h6 class="ion-title">©2018 Chuangyu Cheng. All rights reserved.</h6> 
+      </ion-title>            
+    </ion-navbar>
+  </ion-footer>

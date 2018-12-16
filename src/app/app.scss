@@ -1,0 +1,59 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// ion-card {
+//     border-radius: 20%;
+// }
+.card {
+    border-radius: 20%;
+    // transform-style: preserve-3d; 
+    // transition:1s ease;
+	// -webkit-transform-style: preserve-3d; 
+}
+
+ion-col{
+    text-align: center;
+}
+
+.font-family{
+    font-family: 'Poiret One', cursive;
+    // font-family: 'Megrim', cursive;
+    color: rgb(255, 255, 255);
+}
+
+.toolbar-title{
+    color: rgb(255, 255, 255);
+}
+.toolbar-background{
+    background: rgb(98,10,6);
+background: radial-gradient(circle, rgba(98,10,6,0.9139005944174545) 0%, rgba(240,238,60,0.09317230310092783) 100%);
+}
+//following stylesheet need to apply to class 
+.ion-title {
+    text-align: center;
+}
+.home {
+    background-image: url('../assets/imgs/galaxy.jpg');
+    -webkit-background-image: url('../assets/imgs/galaxy.jpg');
+    width: 100%;
+    // background-color: black;
+}
+.item.item-trns {
+    background-color: rgba($color: #535353, $alpha:0.5)
+}
+
+
